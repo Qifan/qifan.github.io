@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>mxsail Blog</title>
+<meta name="keywords" content="mxsail">
+<meta name="description" content="mxsail">
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<meta name="apple-mobile-web-app-title" content="mxsail">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link  rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<script type="text/javascript">
+;window.Modernizr=function(a,b,c){function x(a){j.cssText=a}function y(a,b){return x(prefixes.join(a+";")+(b||""))}function z(a,b){return typeof a===b}function A(a,b){return!!~(""+a).indexOf(b)}function B(a,b){for(var d in a){var e=a[d];if(!A(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function C(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:z(f,"function")?f.bind(d||b):f}return!1}function D(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+n.join(d+" ")+d).split(" ");return z(b,"string")||z(b,"undefined")?B(e,b):(e=(a+" "+o.join(d+" ")+d).split(" "),C(e,b,c))}var d="2.8.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m="Webkit Moz O ms",n=m.split(" "),o=m.toLowerCase().split(" "),p={},q={},r={},s=[],t=s.slice,u,v={}.hasOwnProperty,w;!z(v,"undefined")&&!z(v.call,"undefined")?w=function(a,b){return v.call(a,b)}:w=function(a,b){return b in a&&z(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=t.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(t.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(t.call(arguments)))};return e}),p.flexbox=function(){return D("flexWrap")},p.flexboxlegacy=function(){return D("boxDirection")};for(var E in p)w(p,E)&&(u=E.toLowerCase(),e[u]=p[E](),s.push((e[u]?"":"no-")+u));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)w(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},x(""),i=k=null,function(a,b){function l(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function m(){var a=s.elements;return typeof a=="string"?a.split(" "):a}function n(a){var b=j[a[h]];return b||(b={},i++,a[h]=i,j[i]=b),b}function o(a,c,d){c||(c=b);if(k)return c.createElement(a);d||(d=n(c));var g;return d.cache[a]?g=d.cache[a].cloneNode():f.test(a)?g=(d.cache[a]=d.createElem(a)).cloneNode():g=d.createElem(a),g.canHaveChildren&&!e.test(a)&&!g.tagUrn?d.frag.appendChild(g):g}function p(a,c){a||(a=b);if(k)return a.createDocumentFragment();c=c||n(a);var d=c.frag.cloneNode(),e=0,f=m(),g=f.length;for(;e<g;e++)d.createElement(f[e]);return d}function q(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return s.shivMethods?o(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+m().join().replace(/[\w\-]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(s,b.frag)}function r(a){a||(a=b);var c=n(a);return s.shivCSS&&!g&&!c.hasCSS&&(c.hasCSS=!!l(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),k||q(a,c),a}var c="3.7.0",d=a.html5||{},e=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,f=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,g,h="_html5shiv",i=0,j={},k;(function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",g="hidden"in a,k=a.childNodes.length==1||function(){b.createElement("a");var a=b.createDocumentFragment();return typeof a.cloneNode=="undefined"||typeof a.createDocumentFragment=="undefined"||typeof a.createElement=="undefined"}()}catch(c){g=!0,k=!0}})();var s={elements:d.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video",version:c,shivCSS:d.shivCSS!==!1,supportsUnknownElements:k,shivMethods:d.shivMethods!==!1,type:"default",shivDocument:r,createElement:o,createDocumentFragment:p};a.html5=s,r(b)}(this,b),e._version=d,e._domPrefixes=o,e._cssomPrefixes=n,e.testProp=function(a){return B([a])},e.testAllProps=D,g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+s.join(" "):""),e}(this,this.document),function(a,b,c){function d(a){return"[object Function]"==o.call(a)}function e(a){return"string"==typeof a}function f(){}function g(a){return!a||"loaded"==a||"complete"==a||"uninitialized"==a}function h(){var a=p.shift();q=1,a?a.t?m(function(){("c"==a.t?B.injectCss:B.injectJs)(a.s,0,a.a,a.x,a.e,1)},0):(a(),h()):q=0}function i(a,c,d,e,f,i,j){function k(b){if(!o&&g(l.readyState)&&(u.r=o=1,!q&&h(),l.onload=l.onreadystatechange=null,b)){"img"!=a&&m(function(){t.removeChild(l)},50);for(var d in y[c])y[c].hasOwnProperty(d)&&y[c][d].onload()}}var j=j||B.errorTimeout,l=b.createElement(a),o=0,r=0,u={t:d,s:c,e:f,a:i,x:j};1===y[c]&&(r=1,y[c]=[]),"object"==a?l.data=c:(l.src=c,l.type=a),l.width=l.height="0",l.onerror=l.onload=l.onreadystatechange=function(){k.call(this,r)},p.splice(e,0,u),"img"!=a&&(r||2===y[c]?(t.insertBefore(l,s?null:n),m(k,j)):y[c].push(l))}function j(a,b,c,d,f){return q=0,b=b||"j",e(a)?i("c"==b?v:u,a,b,this.i++,c,d,f):(p.splice(this.i++,0,a),1==p.length&&h()),this}function k(){var a=B;return a.loader={load:j,i:0},a}var l=b.documentElement,m=a.setTimeout,n=b.getElementsByTagName("script")[0],o={}.toString,p=[],q=0,r="MozAppearance"in l.style,s=r&&!!b.createRange().compareNode,t=s?l:n.parentNode,l=a.opera&&"[object Opera]"==o.call(a.opera),l=!!b.attachEvent&&!l,u=r?"object":l?"script":"img",v=l?"script":u,w=Array.isArray||function(a){return"[object Array]"==o.call(a)},x=[],y={},z={timeout:function(a,b){return b.length&&(a.timeout=b[0]),a}},A,B;B=function(a){function b(a){var a=a.split("!"),b=x.length,c=a.pop(),d=a.length,c={url:c,origUrl:c,prefixes:a},e,f,g;for(f=0;f<d;f++)g=a[f].split("="),(e=z[g.shift()])&&(c=e(c,g));for(f=0;f<b;f++)c=x[f](c);return c}function g(a,e,f,g,h){var i=b(a),j=i.autoCallback;i.url.split(".").pop().split("?").shift(),i.bypass||(e&&(e=d(e)?e:e[a]||e[g]||e[a.split("/").pop().split("?")[0]]),i.instead?i.instead(a,e,f,g,h):(y[i.url]?i.noexec=!0:y[i.url]=1,f.load(i.url,i.forceCSS||!i.forceJS&&"css"==i.url.split(".").pop().split("?").shift()?"c":c,i.noexec,i.attrs,i.timeout),(d(e)||d(j))&&f.load(function(){k(),e&&e(i.origUrl,h,g),j&&j(i.origUrl,h,g),y[i.url]=2})))}function h(a,b){function c(a,c){if(a){if(e(a))c||(j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}),g(a,j,b,0,h);else if(Object(a)===a)for(n in m=function(){var b=0,c;for(c in a)a.hasOwnProperty(c)&&b++;return b}(),a)a.hasOwnProperty(n)&&(!c&&!--m&&(d(j)?j=function(){var a=[].slice.call(arguments);k.apply(this,a),l()}:j[n]=function(a){return function(){var b=[].slice.call(arguments);a&&a.apply(this,b),l()}}(k[n])),g(a[n],j,b,n,h))}else!c&&l()}var h=!!a.test,i=a.load||a.both,j=a.callback||f,k=j,l=a.complete||f,m,n;c(h?a.yep:a.nope,!!i),i&&c(i)}var i,j,l=this.yepnope.loader;if(e(a))g(a,0,l,0);else if(w(a))for(i=0;i<a.length;i++)j=a[i],e(j)?g(j,0,l,0):w(j)?B(j):Object(j)===j&&h(j,l);else Object(a)===a&&h(a,l)},B.addPrefix=function(a,b){z[a]=b},B.addFilter=function(a){x.push(a)},B.errorTimeout=1e4,null==b.readyState&&b.addEventListener&&(b.readyState="loading",b.addEventListener("DOMContentLoaded",A=function(){b.removeEventListener("DOMContentLoaded",A,0),b.readyState="complete"},0)),a.yepnope=k(),a.yepnope.executeStack=h,a.yepnope.injectJs=function(a,c,d,e,i,j){var k=b.createElement("script"),l,o,e=e||B.errorTimeout;k.src=a;for(o in d)k.setAttribute(o,d[o]);c=j?h:c||f,k.onreadystatechange=k.onload=function(){!l&&g(k.readyState)&&(l=1,c(),k.onload=k.onreadystatechange=null)},m(function(){l||(l=1,c(1))},e),i?k.onload():n.parentNode.insertBefore(k,n)},a.yepnope.injectCss=function(a,c,d,e,g,i){var e=b.createElement("link"),j,c=i?h:c||f;e.href=a,e.rel="stylesheet",e.type="text/css";for(j in d)e.setAttribute(j,d[j]);g||(n.parentNode.insertBefore(e,n),m(c,0))}}(this,document),Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0))};</script>
+
+<style type="text/css">
+html{font-family:-apple-system,'BlinkMacSystemFont','PingFang SC','Nanum Gothic','Segoe UI','Roboto','Droid Sans',sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;line-height:1;}article,aside,footer,header,nav,section{display:block;}h1{font-size:2em;margin:0.67em 0;}figcaption,figure,main{display:block;}figure{margin:1em 40px;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace;font-size:1em;}a{background-color:transparent;-webkit-text-decoration-skip:objects;}a:active,a:hover{outline-width:0;}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underlinedotted;}b,strong{font-weight:inherit;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace;font-size:1em;}dfn{font-style:italic;}mark{background-color:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}audio,video{display:inline-block;}audio:not([controls]){display:none;height:0;}img{border-style:none;}svg:not(:root){overflow:hidden;}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,html[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{border:1px solid #c0c0c0;margin:02px;padding:0.35em 0.625em 0.75em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{display:inline-block;vertical-align:baseline;}textarea{overflow:auto;}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details,menu{display:block;}summary{display:list-item;}canvas	{display:inline-block;}template{display:none;}[hidden]{display:none}
+body{background:#F8F8F8}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NanumGothic'), url(/font/NanumGothic/400.woff) format('woff');
+}
+
+a {text-decoration:underline;
+	   -o-transition:color .3s ease-out;
+   	  -ms-transition:color .3s ease-out;
+  	 -moz-transition:color .3s ease-out;
+  -webkit-transition:color .3s ease-out;
+  		  transition:color .3s ease-out}
+a:link{}
+a:hover{}
+a:visited{}
+a:active{}
+a:focus{}
+
+.header {   width:100%;
+            padding:2rem 0 4rem 0;margin:auto;box-sizing:border-box;
+            font-size:0.625rem;font-weight:300;color:#000;letter-spacing:0.015rem;
+            
+            display:inline-flex;flex-flow:row wrap;justify-content:flex-start;
+            text-rendering:geometricPrecision;}
+
+.i_title {  width:736px;text-align:left;padding:0 0 0 2rem; -webkit-flex:0 2 auto;flex:0 2 auto;cursor:default;}
+	
+.container {width:100%;display:inline-flex;flex-flow:column;}
+
+.w {padding:0 0 4rem 0;font-weight:300;width:100%;max-width:768px;min-height:100%;box-sizing:border-box;display:inline-flex;flex-flow:row wrap;justify-content:space-between}
+
+.g, .gt, .gm  {font-size:0.75rem;line-height:1.875;color:#000;
+          max-width:688px;width:100%;margin:0 2rem 0 2rem;
+          -webkit-flex:0 1 auto;flex:0 1 auto;flex-flow:column;justify-content:flex-start}
+
+.gt{font-size:1.75rem}
+.t1{font-size:1.75rem;line-height:2.875}
+.t2{font-size:1.5rem;line-height:4.15;color:#333}
+
+.gl{width:320px;font-size:0.6875rem;margin:0 1.5rem 0 3rem;-webkit-flex:0 0 auto;flex:0 0 auto}/*grid left*/
+/*.gr{-webkit-flex:1 2 auto;flex:1 2 auto;max-width:558px;width:100%;margin:1rem 1.75rem 0 1.25rem;line-height:2.2}*/
+
+.thumb {width:110px;height:110px;padding:0 0.0625rem 0 0}
+.thumb:nth-child(3) {padding:0}
+
+
+.label_lace {color:#222;background-color:oldlace;font-size:0.8rem}
+.tag  {color:#222;background-color:floralwhite;margin-right:1.25rem}
+.l {vertical-align:sub}
+.vm {vertical-align:middle}
+.dd {color:#365899}
+
+.footer {font-size:0.625rem;color:#000;font-weight:300;letter-spacing:0.025rem;text-rendering:geometricPrecision;width:100%;margin:auto;box-sizing:border-box;display:inline-flex;flex-flow:row wrap;justify-content:flex-start}
+.i_f {-webkit-flex:0 2 auto;flex:0 2 auto;width:736px;cursor:default;padding:0 0 0 2rem;line-height:5;background:#F8F8F8;}
+
+
+/* Desktop 1024px */
+@media only screen and (min-width:1026px) {
+/* IE Image quality up code */
+img {-ms-interpolation-mode:bicubic;}
+}
+
+
+	
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+ /* for IE11  */
+} 
+
+
+
+
+
+/*iPhone6 6s Portrait(375px), iPhone6Plus 6sPlus Portrait(414px), Android(Nexus4)(384px) Portrait,*/
+@media only screen and (max-width: 414px){
+a {color:#000}
+
+.header {line-height:8;font-size:0.6875r.
+.w {max-width:414px}
+4px}
+
+.g{font-size:0.875rem;line-height:2}
+.label_lace{color:#000;font-size:1rem;}
+.t2 {font-size:1.55rem}
+
+.g,.gt {margin:0 0.875rem 0 1.125rem}
+.gl {margin:0 0 0 1.125rem}
+.gm {margin:0;max-width:414px}
+.img_daily {width:100%;height:100%}
+}
+
+</style>
+<link href="/css/lightbox.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">
+<item class="i_title">MXSAIL</item>
+</div>
+
+<div class="container">
+
+        <div class="w">
+        <item class="gm"><img src="/img/blog/i_tanlu.jpg" width="320" height="192" class="img_daily" alt=""/></item>
+        <item class="g">2018.8.18 来KKONE吃烤鱼&nbsp;&nbsp;&nbsp;<img src="/img/blog/icon_local.png" width="14" height="14" alt="" class="vm" /> <span class="dd">福田 KKONE</span></item>
+        </div>
+
+        <div class="w">
+        <item class="g"><a href="https://www.amazon.cn/dp/B00FNJPYJK" target="_blank"><img src="/img/blog/icon_amazon.png" width="16" height="16" alt="" class="l" /><span class="label_lace" style="font-size:1.125rem">「 富人不说, 却默默在做的33件事 」</span></a><br /><br />
+            1. 比期限提早两天完成<br />
+            2. 不喜欢的事，再多做三分钟<br />
+            3. 和家人一起吃早餐<br />
+            4. 坐第一排的位子<br />
+            5. 随身带笔<br />
+            6. 在手机桌面输入自己的目标<br />
+            7. 比约定的时间提早15分钟到达<br />
+            8. 先订好玩乐的计划<br />
+            9. 先大声向别人问好<br />
+            10. 在一周内发Email给初次见面的人<br />
+            11. 正确喊出对方的姓名和职称<br />
+            12. 剪掉信用卡<br />
+            13. 兴趣是你一辈子的同伴<br />
+            14. 三秒之后再回答<br />
+            15. 一边聆听一边附和<br />
+            16. 别按关门键(这里应该是指电梯门)<br />
+            17. 少吃一口饭<br />
+            18. 每天和别人共进午餐<br />
+            19. 吃饭时不要掉落食物<br />
+            20. 每天走路或跑步30分钟<br />
+            21. 送客要送到电梯门口<br />
+            22. 所有的回答都从“是”开始<br />
+            23. 睡前五分钟向自己提出问题<br />
+            24. 五分钟内记录梦的日记<br />
+            25. 仔细阅读报纸<br />
+            26. 随身带一本书<br />
+            27. 每周一次，从不同的路线上下班<br />
+            28. 静静坐着观察周遭的人<br />
+            29. 电脑关机再下班<br />
+            30. 装作不知道<br />
+            31. 坏消息别用电子邮件告知<br />
+            32. 赞美不在场的人<br />
+            33. 向自己道谢
+        </item>
+        </div>
+
+        <div class="w">
+        <item class="g"><span class="t1">六座的MPV为什么卖不好</span><br />二个潜在用户群里 六座都不是最优选项</item>
+        </div>
+
+        <div class="w">
+        <item class="g"><img src="/img/blog/icon_youku.png" width="16" height="16" alt="" class="l" /> <a href="https://v.youku.com/v_show/id_XMzc1NzExNDk2NA==.html" target="_blank">广汽的一个遴选比赛</a></item>
+        </div>
+
+	    <div class="w">
+        <item class="g"><span class="t2">2018.8月书单</span><br />
+        2017.1 High Performance Mobile Web<br />
+        <span class="label_lace">「 高性能移动网络 」</span>&nbsp;&nbsp;&nbsp;影印版&nbsp;&nbsp;&nbsp;<img src="/img/blog/p_.jpg" width="48" height="4" alt="" class="vm" /><br />
+        之前看过他的一本Programming the Mobile Web 写得很很很详尽, 他另一本JQuery Mobile的书则平平<br /><br />
+        
+        2013. LONDON Illustrated&nbsp;&nbsp;&nbsp; <a href="https://issuu.com/xiuxiuebook/docs/____________________________________e9d59e41bc72e1" target="_blank">48页试读</a><br />
+        <span class="label_lace">「 去伦敦上插画课 」</span>&nbsp;&nbsp;&nbsp;<img src="/img/blog/p_.jpg" width="48" height="4" alt="" class="vm" /><br /><br />
+        
+        2003. Drawing People: How to Portray the Clothed Figure (Barbara Bradley)<br />
+        <span class="label_lace">「 着装人物素描 」</span>&nbsp;&nbsp;&nbsp;<img src="/img/blog/p.jpg" width="48" height="4" alt="" class="vm" /><br /><br />
+        
+        2013. Suddenly, A Knock on the Door (Etgar Keret)<br />
+        <span class="label_lace">「 突然,响起一阵敲门声 」</span>&nbsp;&nbsp;&nbsp;<img src="/img/blog/p.jpg" width="48" height="4" alt="" class="vm" />
+        </item>
+        </div>
+
+	    <div class="w">
+        <item class="g">2018.7.1<br /><br />
+        <img src="/img/blog/appicon_0.jpg" width="240" height="160" alt=""/><br />
+        参考1 : <a href="https://developer.apple.com/design/resources/" target="_blank">Developer.apple.com/design/resources</a><br />
+        参考2 : <a href="https://developer.apple.com/fonts/" target="_blank">San Francisco 字体</a> ( MEDIUM )&nbsp;15 px<br /><br/>
+        <img src="/img/blog/appicon_1.png" width="163" height="163"  class="vm" alt=""/><br /><br />
+        APPLE建议网格间距8像素，圆角系统自动裁，这里保留圆角只为演示。<br /><br />
+        <img src="/img/blog/appicon_2.png" width="163" height="163" alt=""/><br />
+        <img src="/img/blog/appicon.jpg" width="163" height="163" alt=""/></item>
+        </div>
+
+        <div class="w">
+        <item class="g"><a href="https://chrome.google.com/webstore/detail/mpbpobfflnpcgagjijhmgnchggcjblin" target="_blank">HTTP/2 AND SPDY INDICATOR</a><br />可以检测你现在访问的网站是否支持HTTP/2<br /><br />WP太沉重，受到GITHUB PAGE的启发，<br />自己更新的频率并没有那么大<br />在本地编辑好静态页面，再发布到服务器<br />跟我在wordpress里编辑更新区别不大, 自由度更高。</item>
+        </div>
+
+	    <div class="w">
+        <item class="g"><a href="/img/blog/i_hal.jpg" data-lightbox="blogimg" data-title=""><img src="/img/blog/i_hal.jpg" width="320" height="320" alt=""/></a><a href="/img/blog/i_jdl.jpg" data-lightbox="blogimg" data-title="京鼎楼"><img src="/img/blog/i_jdl.jpg" alt="" width="320" height="320"/></a><br />字体目测是新唐人简篆</item>
+        </div>
+
+	    <div class="w">
+        <item class="g"><a href="/img/blog/i_damiao.jpg" data-lightbox="blogimg" data-title="大妙"><img src="/img/blog/i_damiao.jpg" width="320" height="320" alt="" /></a><br />传统字体应用 感觉白区上的内容需要再斟酌</item>
+        </div>
+
+	    <div class="w">
+		<item class="g"><span class="t1">选一台打印机真难</span><br />PC MAGAZINE&nbsp; : &nbsp;<a href="https://www.pcmag.com/article2/0,2817,2491367,00.asp" target="_blank">THE INKJET PRINTERS OF 2018</a><br />TRUSTED REVIEWS&nbsp; : <a href="https://www.trustedreviews.com/best/best-printer-3434011" target="_blank">www.trustedreviews.com/best/best-printer</a></item>
+	    </div>
+
+	    <div class="w">
+		<item class="gl"><img src="/img/gohouse/Gohouse_ico.jpg" width="120" height="104" alt=""/><br /><br />GOHOUSE &nbsp;MAP &nbsp;ICON<br /><br /><br /><br /><br /><img src="/img/blog/gohouse_icon_1.png" width="180" height="60" alt=""/><br /><br /><img src="/img/blog/gohouse_icon_2.png" width="180" height="60" alt=""/><br /><br /><img src="/img/blog/gohouse_icon_3.png" width="180" height="60" alt=""/><br /><br /><img src="/img/blog/gohouse_icon_4.png" width="180" height="60" alt=""/></item>
+	    </div>
+
+	    <div class="w">
+		<item class="g"><span class="t2">2018.6月书单</span><br />1991. The Packaging Designer Book of Patterns<br /><span class="label_lace">「 包装结构设计大全 」</span> <span style="font-size:0.6275rem">(DELAY)</span><br /><br />2011. &nbsp;<span class="label_lace">「 戊戌变法史事考二集 」</span>&nbsp;&nbsp;&nbsp;茅海建 <br />注：书名写了，是史事考。所以读起来是没那么容易。<br /><br />2012. ISLANMIC DESIGN<br /><span class="label_lace">「 几何天才的杰作 伊斯兰图案设计 」</span></item>
+        </div>
+
+	    <div class="w">	
+		<item class="g"><span class="t2">2018.5 想出几本旧书</span><br /><a href="/img/blog/book_pro_javascript_for_web.jpg" data-lightbox="2book" data-title="Javascript高级程序设计（第二版）"><img src="/img/blog/b_1.jpg" width="120" height="120" alt="" class="thumb" /></a><a href="/img/blog/book_2.jpg" data-lightbox="2book" data-title="一个APP的诞生"><img src="/img/blog/b_2.jpg" width="120" height="120" alt="" class="thumb" /></a><a href="/img/blog/book_3.jpg" data-lightbox="2book" data-title="十三天, 古巴导弹危机回忆录"><img src="/img/blog/b_3.jpg" width="120" height="120" alt="" class="thumb" /></a><br /><br />图1:JAVASCRIPT高级程序设计第2版<br />注：<a href="http://www.ituring.com.cn/article/1040" target="_blank">第2版和第3版的区别</a><br />这本书作者非常用心。对于有其它语言基础的人来说，这是入门的书。但是对于我来说还是有点深了。<br /><br />图2:一个APP的诞生<br />适合不熟悉流程的小白翻阅，大部份小公司走的流程可能跟这个不一样<br /><br />图3: 十三天, 古巴导弹危机回忆录，看完大概知道肯尼迪被刺杀的原因。作者最后竞选总统也遇害了。
+        </item>
+        </div>
+
+	    <div class="w">
+        <item class="g"><img src="/img/blog/i_fundoland.jpg" width="320" height="424" alt=""/><br />2018.5.1 &nbsp;FUNDOLAND<br /><img src="/img/blog/icon_local.png" width="13" height="13" alt="" class="l" /> <span class="dd">福田区 福华路3号 </span></item>
+        </div>
+</div>
+
+<div class="footer">
+    <item class="i_f">@MXSAIL</item>
+</div>
+
+<script src="/js/jquery-2.2.4.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"><\/script>')</script>
+<script src="/js/lightbox.js"></script>
+<script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'positionFromTop': 50,
+    })
+</script>
+</body>
+</html>
